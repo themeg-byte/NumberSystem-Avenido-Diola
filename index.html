@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number System Conversion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>NUMBER SYSTEM CONVERSION</h1>
+
+  <div class="row">
+    <select id="inputType">
+      <option value="10">DECIMAL (0-9)</option>
+      <option value="2">BINARY (0-1)</option>
+      <option value="8">OCTAL (0-7)</option>
+      <option value="16">HEXADECIMAL (0-9 & A-F)</option>
+    </select>
+
+    <select id="outputType">
+      <option value="2">BINARY</option>
+      <option value="10">DECIMAL</option>
+      <option value="8">OCTAL</option>
+      <option value="16">HEXADECIMAL</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <input id="inputValue" placeholder="Enter...">
+    <input id="outputValue" readonly placeholder="Result">
+  </div>
+
+  <button id="convertBtn" onclick="convert()">CONVERT</button>
+  <button id="clrBtn" onclick="clr()">CLEAR</button>
+
+</div>
+
+<!-- LINK TO JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
