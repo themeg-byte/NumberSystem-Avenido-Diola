@@ -16,7 +16,7 @@ function convert() {
     outputValue.value = "Invalid!";
     return;
 }
-    if (fromBase === 16 && !/^[0123456789ABCDEF]+$/.test(value)) {
+    if (fromBase === 16 && !/^[0123456789AaBbCcDdEeFf]+$/.test(value)) {
     outputValue.value = "Invalid!";
     return;
 }
@@ -35,4 +35,5 @@ function clr() {
   inputValue.value = "";
   outputValue.value = "";
 }
+
 
