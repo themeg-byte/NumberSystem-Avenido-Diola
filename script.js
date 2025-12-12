@@ -20,14 +20,15 @@ function convert() {
     alert("Invalid! Must input only 0-9 and A-F");
     return;
 }
-
-  outputValue.value = decimalNumber.toString(toBase).toUpperCase();
+    if (fromBase === 10 && !/^[0123456789]+$/.test(value)) {
+    alert("Invalid! Must input only 0-9");
+    return;
 }
-
 function clr() {
   inputValue.value = "";
   outputValue.value = "";
 }
+
 
 
 
