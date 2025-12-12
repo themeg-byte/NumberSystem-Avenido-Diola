@@ -12,6 +12,14 @@ function convert() {
     outputValue.value = "Invalid!";
     return;
   }
+  if (fromBase === 8 && !/^[01234567]+$/.test(value)) {
+    outputValue.value = "Invalid!";
+    return;
+}
+    if (fromBase === 16 && !/^[0123456789ABCDEF]+$/.test(value)) {
+    outputValue.value = "Invalid!";
+    return;
+}
 
   let decimalNumber = parseInt(value, fromBase);
 
@@ -27,3 +35,4 @@ function clr() {
   inputValue.value = "";
   outputValue.value = "";
 }
+
