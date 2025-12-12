@@ -28,6 +28,7 @@ function clr() {
   inputValue.value = "";
   outputValue.value = "";
 }
+}
 
 
 
